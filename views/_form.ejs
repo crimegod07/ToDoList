@@ -1,0 +1,37 @@
+<div>
+    <form class="form-floating" action="/todolist" method="POST">
+        <input name="description" type="text" class="form-control" id="floatingInputValue" placeholder="Write Here">
+        <label for="floatingInputValue">Description</label>
+      
+     
+   
+
+
+     <div class="row g-2">
+        <div class="col-md">
+            <div class="form-floating">
+              <select  name="work" class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Personal</option>
+                <option value="2">Home</option>
+                <option value="3">School</option>
+                <option value="4">Assignment</option>
+              </select>
+              <label for="floatingSelectGrid">Category</label>
+            </div>
+          </div>
+        <div class="col-md">
+            <div id="date-picker-example" class="md-form form-floating datepicker">
+                <input name="date" placeholder="Select date" type="date" id="example" class="form-control">
+                <label for="floatingSelectGrid">Date</label>
+                <i class="bi bi-calendar-check-fill"></i>
+              </div>
+        </div>
+      </div>
+
+      <div id="task">
+        <button type="submit" id ="add" class="btn btn-primary btn-lg">+ Add Task</button>
+        <button type="button" id="delete" class="btn btn-secondary btn-lg">Delete Task</button>
+        </div>
+    </form>
+    </div>

@@ -1,0 +1,17 @@
+header{
+    font-size: 100px;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+#add{
+    margin:50px;
+}
+
+#delete{
+    margin:50px;
+    background-color: tomato;
+}
