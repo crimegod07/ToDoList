@@ -4,9 +4,8 @@ const port = 8001;
 const expressLayouts = require('express-ejs-layouts');
 const db = require('./config/mongoose');
 const List = require('./models/list');
-const cookieParser = require('cookie-parser');
 
-app.use(cookieParser());
+
 app.use(expressLayouts)
  app.set('layout extractStyles', true);
 app.set('layout extractScripts', true);
@@ -16,14 +15,16 @@ app.set('layout extractScripts', true);
  app.set('views', './views');
 
 
- app.use('/', require('./routes'));
+// app.use('/', require('./routes'));
 app.use(express.static('./assets'));
+
 
 app.use(express.urlencoded());
 
 
 
 app.get('/', function(req,res){
+
     
  
     List.find({}, function(err, lists){
@@ -31,6 +32,7 @@ app.get('/', function(req,res){
             console.log('Error in fetching contact from db');
             return;
         }
+        console.log(lists);
         return res.render("layout", {
          title : " To DO List",
          To_Do_List : lists
@@ -39,7 +41,7 @@ app.get('/', function(req,res){
      
  })
 
-app.post('/todo-list', function(req, res){
+app.post('/', function(req, res){
     // contactList.push(req.body);
     List.create({
         description: req.body.description,
@@ -51,6 +53,7 @@ app.post('/todo-list', function(req, res){
             return;
         };
         console.log('******', newList);
+        
         
     });
     
