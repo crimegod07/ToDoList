@@ -1,12 +1,9 @@
-<div>
-    <form class="form-floating" action="/" method="POST">
+<div id="background-img">
+    <form class="form-floating" action="/todo" method="POST">
         <input name="description" type="text" class="form-control" id="floatingInputValue" placeholder="Write Here">
         <label for="floatingInputValue">Description</label>
       
-     
-   
-
-
+  
      <div class="row g-2">
         <div class="col-md">
             <div class="form-floating">
@@ -30,8 +27,27 @@
       </div>
 
       <div id="task">
-        <button type="submit" id ="add" class="btn btn-primary btn-lg">+ Add Task</button>
-        <button type="button" id="delete" class="btn btn-secondary btn-lg">Delete Task</button>
+        <button name="butn" type="submit" id ="add" class="btn btn-primary btn-lg" value=<%= title %> >+ Add Task</button>
         </div>
     </form>
+
+    
+    <div id="list-container">
+      <ul class="a">
+          <% for(let i of To_Do_List) { %>
+              <li class="contact">
+                  <div class="details">
+                  <p><%= i.description %></p>
+                  <p><%= i.work %></p>
+                  <p><%= i.date %></p>
+                  </div>
+                  <div class="delete-button">
+                      <a href="/delete/?id=<%= i._id %> ">
+                          <i class="fas fa-window-close"></i>
+                      </a>
+                  </div>
+              </li>
+          <%}%>
+      </ul>
+  </div>
     </div>

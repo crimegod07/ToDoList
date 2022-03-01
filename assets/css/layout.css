@@ -5,13 +5,50 @@ header{
 body{
     margin: 0;
     text-align: center;
+    background-image: url('image.gif');
 }
 
 #add{
     margin:50px;
 }
 
-#delete{
+/* #delete{
     margin:50px;
     background-color: tomato;
+} */
+
+#Task{
+    display:flex;
+    flex-direction: column;
+    height: 67px;
+    
+   
+
+}
+
+.flex1{
+    background-color: rgb(205, 214, 214);
+}
+
+ ul.a{
+    list-style-type: none;
+  
+    
+}
+
+.details{
+    width:100vw;
+    border:2px solid grey;
+    background-image: linear-gradient(45deg, #477920, transparent);
+    display:flex;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+
+input{
+    background-color: #9bcea1 !important;
+}
+
+.form-select{
+    background-color: #9bcea1;
 }
