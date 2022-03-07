@@ -1,15 +1,15 @@
-header{
-    font-size: 100px;
+header {
+  font-size: 100px;
 }
 
-body{
-    margin: 0;
-    text-align: center;
-    background-image: url('image.gif');
+body {
+  margin: 0;
+  text-align: center;
+  background-image: url("image.gif");
 }
 
-#add{
-    margin:50px;
+#add {
+  margin: 50px;
 }
 
 /* #delete{
@@ -17,38 +17,33 @@ body{
     background-color: tomato;
 } */
 
-#Task{
-    display:flex;
-    flex-direction: column;
-    height: 67px;
-    
-   
-
+#Task {
+  display: flex;
+  flex-direction: column;
+  height: 67px;
 }
 
-.flex1{
-    background-color: rgb(205, 214, 214);
+.flex1 {
+  background-color: rgb(205, 214, 214);
 }
 
- ul.a{
-    list-style-type: none;
-  
-    
+ul.a {
+  list-style-type: none;
 }
 
-.details{
-    width:100vw;
-    border:2px solid grey;
-    background-image: linear-gradient(45deg, #477920, transparent);
-    display:flex;
-    justify-content:space-around;
-    align-items: flex-start;
+.details {
+  width: 100vw;
+  border: 2px solid grey;
+  background-image: linear-gradient(45deg, #477920, transparent);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-input{
-    background-color: #9bcea1 !important;
+input {
+  background-color: #9bcea1 !important;
 }
 
-.form-select{
-    background-color: #9bcea1;
+.form-select {
+  background-color: #9bcea1;
 }
